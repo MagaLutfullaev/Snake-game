@@ -1,0 +1,132 @@
+body {
+	margin: 0px;
+	font-family: sans-serif;
+}
+
+
+#game {
+	background: #353336;
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#game-canvas {
+	display: block;
+	border-radius: 5px;	
+}
+
+.game-header {
+	padding-top: 1vmin;
+	padding-bottom: 1vmin;
+
+	display: flex;
+	justify-content: space-between;
+}
+.game-score {
+	padding: 10px 15px;
+	min-width: 160px;
+	height: 50px;
+	background: #121214;
+	border-radius: 5px;
+	box-shadow: 0px 0px 40px 10px #161618;
+	margin-bottom: 20px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.score-count{
+	font-size: 3vmin;
+	color: #18d26c;
+	font-weight: bold;
+}
+.score-record {
+	font-size: 3vmin;
+	color: #ffffff;
+	font-weight: normal;
+	position: absolute;
+	top: 20px;
+	left: 30px;
+}
+
+.canvas-wrapper {
+	background-color: #161618;
+	border-radius: 5px;
+	border: 10px solid #161618;
+	box-shadow: 0px 0px 40px 10px #161618;
+
+	background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.2'%3E%3Ccircle cx='8' cy='8' r='4' fill='%23525053'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.open_btn {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+	color: #fff;
+	font-size: 20px;
+}
+
+.settings {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+	justify-content: center;
+	align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(26, 26, 26, 0.5)
+}
+.settings_item {
+	position: relative;
+	background-color: #000;
+	width: 400px;
+	height: 300px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0px 0px 40px 10px #161618;
+}
+.btn_close {
+	background-color: transparent;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	border: none;
+	color: #fff;
+	font-size: 30px;
+}
+.settings_title {
+	padding: 40px;
+	font-size: 40px;
+	color: #fff;
+	margin: 0 auto;
+}
+.settings_check {
+	color: #fff;
+}
+.btn_game {
+	position: absolute;
+	top: 50%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 110px;
+	height: 35px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+}
